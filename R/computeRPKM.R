@@ -142,7 +142,7 @@ computeRPKM <- function(bamFiles, RIPSeekerRead=TRUE, paired=FALSE,
 		
 		geneInfo <- getBM(mart=mart, 
 				attributes=c("chromosome_name", "start_position", "end_position", "strand",
-						"external_gene_id", "ensembl_transcript_id", 
+						"external_gene_name", "ensembl_transcript_id", 
 						"ensembl_gene_id", "ucsc", "description"),
 				filters=idType, values = featureID)
 		
